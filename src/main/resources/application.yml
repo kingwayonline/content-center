@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: content-center
+  main:
+      allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 106.13.81.68:8848
+server:
+  port: 8082
