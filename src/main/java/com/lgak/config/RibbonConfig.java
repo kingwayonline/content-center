@@ -1,5 +1,6 @@
 package com.lgak.config;
 
+import com.alibaba.cloud.sentinel.annotation.SentinelRestTemplate;
 import com.netflix.loadbalancer.IRule;
 import com.netflix.loadbalancer.RandomRule;
 import com.netflix.loadbalancer.RoundRobinRule;
@@ -13,6 +14,7 @@ public class RibbonConfig {
 
     @Bean
     @LoadBalanced
+    @SentinelRestTemplate
     public RestTemplate restTemplate() {
         return new RestTemplate();
     }
