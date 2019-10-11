@@ -14,7 +14,7 @@ public class RibbonConfig {
 
     @Bean
     @LoadBalanced
-    @SentinelRestTemplate
+    @SentinelRestTemplate(fallback = "fallback",fallbackClass = FallBackTest.class)
     public RestTemplate restTemplate() {
         return new RestTemplate();
     }
