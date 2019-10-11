@@ -14,7 +14,7 @@ public class FallBackTest {
                                                       byte[] body, ClientHttpRequestExecution execution, BlockException ex) {
         System.err.println("fallback: " + ex.getClass().getCanonicalName());
         log.info(request.getURI().toString());
-        return new SentinelClientHttpResponse("custom fallback info");
+        return new SentinelClientHttpResponse("{\"msg\":\"custom fallback info\"}");
     }
 
 
