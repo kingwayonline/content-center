@@ -7,8 +7,9 @@ spring:
     nacos:
       discovery:
         server-addr: 106.13.81.68:8848
-    sentinel:
-      transport:
-        dashboard: localhost:8080
 server:
   port: 8082
+
+ahas.namespace: default
+project.name: content-center
+ahas.license: 8f31af8dc3204714b62916c5301e1f9e
