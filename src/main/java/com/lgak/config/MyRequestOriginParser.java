@@ -6,6 +6,9 @@ import org.springframework.util.StringUtils;
 
 import javax.servlet.http.HttpServletRequest;
 
+/**
+ * 设定应用来源
+ */
 //@Component
 public class MyRequestOriginParser implements RequestOriginParser {
     @Override
